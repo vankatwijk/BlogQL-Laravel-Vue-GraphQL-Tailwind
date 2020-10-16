@@ -13,3 +13,6 @@ php artisan vendor:publish --provider="Nuwave\Lighthouse\LighthouseServiceProvid
 
 lighthouse graphql entry point
 http://127.0.0.1:8000/graphql-playground
+
+php artisan migrate
+php artisan migrate:rollback
