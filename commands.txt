@@ -10,3 +10,6 @@ npm install tailwindcss@1.4.6
 npx tailwindcss ini
 
 php artisan vendor:publish --provider="Nuwave\Lighthouse\LighthouseServiceProvider" --tag=schema
+
+lighthouse graphql entry point
+http://127.0.0.1:8000/graphql-playground
