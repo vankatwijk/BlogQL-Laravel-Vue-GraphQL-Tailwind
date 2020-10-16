@@ -16,7 +16,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.4",
         "mll-lab/laravel-graphql-playground": "2.1.0",
-        "nuwave/lighthouse": "4.14.1"
+        "nuwave/lighthouse": "^4.17"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.8",

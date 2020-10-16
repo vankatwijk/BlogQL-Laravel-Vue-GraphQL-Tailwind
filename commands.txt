@@ -8,3 +8,5 @@ php artisan ui vue
 
 npm install tailwindcss@1.4.6
 npx tailwindcss ini
+
+php artisan vendor:publish --provider="Nuwave\Lighthouse\LighthouseServiceProvider" --tag=schema
