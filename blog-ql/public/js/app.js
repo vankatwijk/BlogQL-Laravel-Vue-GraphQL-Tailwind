@@ -32867,6 +32867,18 @@ __webpack_require__.r(__webpack_exports__);
 
 window.Vue = vue__WEBPACK_IMPORTED_MODULE_1___default.a;
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var routes = [{
+  path: '/',
+  name: 'index',
+  component: {}
+}, {
+  path: '/post/:id',
+  name: 'post',
+  component: {}
+}];
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]({
+  routes: routes
+});
 var app = new vue__WEBPACK_IMPORTED_MODULE_1___default.a({
   el: '#app'
 });
