@@ -3,6 +3,9 @@ import './bootstrap';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
+import PostList from './PostList';
+import Post from './Post';
+
 window.Vue = Vue;
 Vue.use(VueRouter);
 
@@ -10,12 +13,12 @@ const routes = [
     {
         path:'/',
         name:'index',
-        component:{}
+        component:PostList
     },
     {
         path:'/post/:id',
         name:'post',
-        component:{}
+        component:Post
     }
 ];
 
@@ -25,4 +28,5 @@ const router = new VueRouter({
 
 const app = new Vue({
     el: '#app',
+    router
 });
