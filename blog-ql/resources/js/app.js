@@ -6,8 +6,12 @@ import VueRouter from 'vue-router';
 import PostList from './PostList';
 import Post from './Post';
 
+import ApolloClient from 'apollo-boost'
+import VueApollo from 'vue-apollo';
+
 window.Vue = Vue;
 Vue.use(VueRouter);
+Vue.use(VueApollo);
 
 const routes = [
     {
@@ -21,6 +25,13 @@ const routes = [
         component:Post
     }
 ];
+const apolloClient = new ApolloClient({
+    uri: 'http://127.0.0.1:8000/graphql'
+})
+
+const apolloProvider = new VueApollo({
+    defaultClient: apolloClient,
+})
 
 const router = new VueRouter({
     mode:'history',
@@ -29,5 +40,6 @@ const router = new VueRouter({
 
 const app = new Vue({
     el: '#app',
+    apolloProvider,
     router
 });

@@ -17,3 +17,5 @@ http://127.0.0.1:8000/graphql-playground
 php artisan migrate
 php artisan migrate:rollback
 php artisan migrate:refresh --seed
+
+npm i vue-apollo@3.0.3 graphql@15.2.0 apollo-boost@0.4.9
